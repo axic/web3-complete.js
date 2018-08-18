@@ -58,9 +58,36 @@ function traceNamespace (web3) {
   })
 }
 
+function parityNamespace (web3) {
+  // From https://wiki.parity.io/JSONRPC-parity-module
+  web3.extend({
+    property: 'parity',
+    methods: [{
+      name: 'pendingTransactions',
+      call: 'parity_pendingTransactions',
+      params: 0,
+      inputFormatter: web3.extend.formatters.outputTransactionFormatter
+    }, {
+      name: 'pendingTransactionsStats',
+      call: 'parity_pendingTransactionsStats',
+      params: 0
+    }, {
+      name: 'listAccounts',
+      call: 'parity_listAccounts',
+      params: 2
+    }, {
+      name: 'phraseToAddress',
+      call: 'parity_phraseToAddress',
+      params: 1
+    }]
+  }]
+}
+
 module.exports = function (web3) {
   // Geth/Aleth-debugging
   debugNamespace(web3)
   // Tracing
   traceNamespace(web3)
+  // Parity-specific
+  parityNamespace(web3)
 }

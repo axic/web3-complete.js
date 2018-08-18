@@ -9,6 +9,14 @@ function debugNamespace (web3) {
       name: 'storageRangeAt',
       call: 'debug_storageRangeAt',
       params: 5
+    }, {
+      name: 'traceTransaction',
+      call: 'debug_traceTransaction',
+      params: 2
+    }, {
+      name: 'preimage',
+      call: 'debug_preimage',
+      params: 1
     }]
   })
 }

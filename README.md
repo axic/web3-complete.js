@@ -4,7 +4,7 @@
 
 This library tries to support all RPC methods not supported by by web3.js.
 
-Currently it only adds the `debug` namespace.
+Currently it only adds the `debug` and `trace` namespace.
 
 ## Author(s)
 

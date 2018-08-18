@@ -1,6 +1,6 @@
 {
   "name": "web3-complete",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Comprehensive collection of RPC methods not supported by web3.js",
   "main": "index.js",
   "scripts": {

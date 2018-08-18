@@ -58,9 +58,24 @@ function traceNamespace (web3) {
   })
 }
 
+function parityNamespace (web3) {
+}
+
+function evmNamespace (web3) {
+}
+
+function testNamespace (web3) {
+}
+
 module.exports = function (web3) {
-  // Geth/Aleth-debugging
-  debugNamespace(web3)
-  // Tracing
-  traceNamespace(web3)
+    // Geth/Aleth-tracing
+    debugNamespace(web3)
+    // Tracing
+    traceNamespace(web3)
+    // Parity
+    parityNamespace(web3)
+    // Ganache
+    evmNamespace(web3)
+    // Retesteth
+    testNamespace(web)
 }

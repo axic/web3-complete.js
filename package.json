@@ -1,0 +1,27 @@
+{
+  "name": "web3-extended",
+  "version": "0.0.0",
+  "description": "Comprehensive collection of RPC methods not supported by web3.js",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axic/web3-extended.js.git"
+  },
+  "keywords": [
+    "ethereum",
+    "web3"
+  ],
+  "author": "Alex Beregszaszi <alex@rtfs.hu>",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/axic/web3-extended.js/issues"
+  },
+  "homepage": "https://github.com/axic/web3-extended.js#readme",
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}

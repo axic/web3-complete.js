@@ -1,4 +1,4 @@
-# web3-extended.js
+# web3-complete.js
 
 [Web3](https://github.com/ethereum/web3.js) provides a way to extend its builtin RPC method wrappers.
 
